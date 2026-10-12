@@ -1,0 +1,84 @@
+AuctionPad — Every token starts with an auction
+CA
+9AhHKx…rFpump
+9AhHKxygiHncbXLhMiK33dai9oPGjP3m9nyzZ1rFpump
+pump.fun
+AuctionPad
+Auctions
+Launch
+Portfolio
+How it works
+Connect wallet
+Connect a wallet
+No Solana wallet detected in this browser. Install one to continue.
+Phantom
+Install
+Solflare
+Backpack
+Make sure your wallet is set to
+Mainnet
+.
+Every token starts with an auction.
+A fairer way to discover the price of a new token. Everyone deposits SOL in the same window, and everyone receives tokens at the same price.
+Launch a token
+6
+SOL deposited
+3.03
+Unique depositors
+11
+All
+Live
+Upcoming
+Completed
+A CAT
+Settled
+$
+AUCTIONCAT
+Raised
+0.65
+SOL
+Depositors
+1
+In pool
+300,000,000
+Auction Cat
+ACAT
+2.36
+9
+500,000,000
+test
+TEST
+0.01
+Auction Inu
+Refunds open
+AINU
+0
+400,000,000
+AuctionPad · Built on Metaplex Genesis Launch Pools
+Not financial advice. Tokens launched here are created by their users.
+width=device-width, initial-scale=1
+Launch Solana tokens through transparent Metaplex Genesis Launch Pools. Everyone deposits SOL in the same window and receives tokens pro-rata.
+https://www.auctionpad.fun/opengraph-image?3787cca6f1472391
+AuctionPad — Every token starts with an auction.
+How it works · AuctionPad
+AuctionPad runs on Metaplex Genesis Launch Pools, an audited Solana program. Funds sit in on-chain accounts the program controls, never with AuctionPad.
+A creator opens a pool
+The creator mints a fixed supply, puts part of it in a Launch Pool, and sets a deposit window. Mint and freeze authority are revoked, so supply can never grow.
+2
+Everyone deposits SOL
+While the window is open, anyone can deposit SOL or withdraw it again. There is no first-come advantage: depositing early and depositing late are treated the same.
+3
+The price is set by the total
+When the window closes, the price is total SOL deposited divided by tokens in the pool. Everyone pays that same price.
+4
+Claim tokens or a refund
+Each depositor claims tokens in proportion to their share of deposits. If the creator set a minimum raise and it was not met, everyone can claim a full refund.
+Fees
+Depositing and withdrawing cost
+% in protocol fees, plus Solana network fees. Genesis takes
+5
+% of raised SOL when the creator withdraws proceeds. AuctionPad adds no fee of its own.
+Risks
+Anyone can launch a token. A fair launch does not make a token valuable. Only deposit what you can afford to lose, and check the creator before you participate.
+Browse auctions
+How Genesis Launch Pool auctions discover a fair price for new tokens.

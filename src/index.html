@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ignopad | One window, one clearing rate</title>
+<meta name="description" content="Ignopad runs one Igno window on Solana, so every participant settles at a single clearing rate. Live Solana market tape included.">
+<meta name="theme-color" content="{{THEME}}">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="https://ignopad.fun/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ignopad">
+<meta property="og:title" content="Ignopad | One window, one clearing rate">
+<meta property="og:description" content="A single Igno window on Solana with one shared clearing rate, plus a live Solana market tape.">
+<meta property="og:url" content="https://ignopad.fun/">
+<meta property="og:image" content="https://ignopad.fun/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ignopad.fun/og.jpg">
+<script src="/js/boot.js"></script>
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span data-progress></span></div>
+<a class="skip" href="#tape">Skip to the tape</a>
+<span class="sr-only" role="status" aria-live="polite" data-live-msg></span>
+
+<header class="head">
+{{CA}}
+  <div class="bar wrap">
+    <a class="brand" href="#top" aria-label="Ignopad home">
+      <svg class="brand-mark" viewBox="{{MARK_VB}}" aria-hidden="true" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="{{MARK_D}}"/></svg>
+      <span class="brand-name">Ignopad</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#tape">Tape</a>
+      <a href="#method">Method</a>
+      <a href="#channels">Channels</a>
+    </nav>
+    <div class="social" role="group" aria-label="Social links">
+{{SOCIAL}}
+    </div>
+  </div>
+</header>
+<nav class="nav-m" aria-label="Sections">
+  <a href="#tape">Tape</a>
+  <a href="#method">Method</a>
+  <a href="#channels">Channels</a>
+</nav>
+
+<main id="top">
+  <div class="wrap stack">
+
+    <section class="hero" data-hero aria-labelledby="h1">
+      <div class="mesh" aria-hidden="true">
+        <span class="layer" data-depth="0.5"><i class="blob b1"></i></span>
+        <span class="layer" data-depth="0.9"><i class="blob b2"></i></span>
+        <span class="layer" data-depth="1.3"><i class="blob b3"></i></span>
+        <span class="layer" data-depth="0.25"><i class="gridlines"></i></span>
+        <span class="layer" data-depth="1.1"><i class="ring r1"></i></span>
+        <span class="layer" data-depth="0.7"><i class="ring r2"></i></span>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow" data-reveal>
+          <span class="pill" data-pill data-mode="connecting" role="status"><i class="dot" aria-hidden="true"></i><span data-pill-text>Connecting</span></span>
+          <span class="chip-s">{{CHAIN}}</span>
+        </div>
+        <h1 id="h1" data-reveal>One window opens. One rate clears.</h1>
+        <p class="lede" data-reveal>Ignopad is a Solana launch desk built around the Igno window. Everyone commits together, and the whole book settles at a single rate.</p>
+        <div class="cta" data-reveal>
+          <a class="btn btn-solid" href="#tape">Watch the tape</a>
+          <a class="btn btn-line" href="#method">Read the method</a>
+        </div>
+      </div>
+      <aside class="lead card" data-spot data-lead data-skel="on" data-reveal aria-label="Busiest token right now">
+        <span class="lead-k mono">Busiest token</span>
+        <div class="lead-v"><span class="lead-sym mono" data-lead-sym>&mdash;</span><span class="chg mono num" data-lead-ch></span></div>
+        <div class="lead-px mono num" data-lead-px>&mdash;</div>
+        <span class="lead-n">Ranked by day volume across Solana pairs</span>
+        <i class="lead-skel" aria-hidden="true"></i>
+      </aside>
+    </section>
+
+    <dl class="stats" data-reveal>
+      <div class="tile-stat" data-skel="on"><dt>Tokens on the tape</dt><dd class="mono num" data-t="count">&mdash;</dd></div>
+      <div class="tile-stat" data-skel="on" data-spot><dt>Volume, top ten</dt><dd class="mono num" data-t="volume">&mdash;</dd></div>
+      <div class="tile-stat" data-skel="on" data-spot><dt>Depth, top ten</dt><dd class="mono num" data-t="liquidity">&mdash;</dd></div>
+    </dl>
+
+    <section class="ticker" data-ticker data-skel="on" aria-label="Live token ticker" data-reveal>
+      <div class="tk-wrap">
+        <div class="tk-track" data-ticker-track>
+{{TICKER_SKEL}}
+        </div>
+      </div>
+    </section>
+
+    <section id="tape" class="sec" aria-labelledby="tape-h">
+      <div class="sec-head" data-reveal>
+        <h2 id="tape-h">Solana tape</h2>
+        <p class="sec-sub">The ten busiest tokens by day volume. The feed redraws each minute while this tab stays in view.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Order the tape" data-reveal>
+        <button role="tab" type="button" aria-selected="true" data-sort="volume" tabindex="0">Volume</button>
+        <button role="tab" type="button" aria-selected="false" data-sort="gainers" tabindex="-1">Gainers</button>
+        <button role="tab" type="button" aria-selected="false" data-sort="losers" tabindex="-1">Losers</button>
+        <button role="tab" type="button" aria-selected="false" data-sort="depth" tabindex="-1">Depth</button>
+        <i class="tab-ink" data-tab-ink aria-hidden="true"></i>
+      </div>
+      <p class="feed-err" data-error hidden role="alert"><span class="mono">&mdash;</span> The market feed is not answering. Retrying with a growing pause; nothing is lost.</p>
+      <div class="grid" data-grid data-skel="on" aria-live="off">
+{{SKEL_CARDS}}
+      </div>
+    </section>
+
+    <section id="method" class="sec" aria-labelledby="method-h">
+      <div class="sec-head" data-reveal>
+        <h2 id="method-h">The Igno method</h2>
+        <p class="sec-sub">Four moves, from first commitment to final claim.</p>
+      </div>
+      <ol class="steps">
+        <li class="card step" data-spot data-reveal><span class="step-n mono">01</span><h3>Open an Igno span</h3><p>The project sets supply, allocation and span up front, before a single commitment lands.</p></li>
+        <li class="card step" data-spot data-reveal><span class="step-n mono">02</span><h3>Commit together</h3><p>Participants stake SOL throughout the Igno span. Early arrival buys no edge over a late one.</p></li>
+        <li class="card step" data-spot data-reveal><span class="step-n mono">03</span><h3>Let one rate clear</h3><p>Once the span ends, the pot of staked SOL is spread across the allocation, giving one clearing rate for every wallet.</p></li>
+        <li class="card step" data-spot data-reveal><span class="step-n mono">04</span><h3>Collect your slice</h3><p>Every wallet collects tokens sized to its slice of the pot, at that clearing rate.</p></li>
+      </ol>
+    </section>
+
+    <section id="channels" class="sec" aria-labelledby="ch-h">
+      <div class="sec-head" data-reveal>
+        <h2 id="ch-h">Channels</h2>
+        <p class="sec-sub">Official handles appear here the moment they are confirmed. Until then they stay switched off.</p>
+      </div>
+      <ul class="chips">
+{{CHANNELS}}
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>Ignopad &middot; {{DOMAIN}}</span>
+    <span>Informational only. Trade at your own risk.</span>
+  </div>
+</footer>
+
+<script type="application/json" id="reg">{{REG}}</script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

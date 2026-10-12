@@ -1,0 +1,14 @@
+{
+  "name": "ignopad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ignopad marketing and live market site",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "assets": "python -I scripts/assets.py",
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}

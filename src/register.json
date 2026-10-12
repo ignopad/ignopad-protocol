@@ -1,0 +1,11 @@
+{
+  "_about": "One record per external fact. state: stated | absent | unconfirmed. Absent and unconfirmed records carry no value and no url. Dates live here as data only and never reach dist.",
+  "records": {
+    "ca":      { "label": "Contract address", "state": "absent", "checked": "2026-10-12" },
+    "x":       { "label": "X",                "state": "absent", "kind": "url", "checked": "2026-10-12" },
+    "github":  { "label": "GitHub",           "state": "absent", "kind": "url", "checked": "2026-10-12" },
+    "chain":   { "label": "Chain",            "state": "stated", "value": "Solana", "rpc": "https://solana-rpc.publicnode.com", "source": "client statement", "scope": "batch-level", "checked": "2026-10-12" },
+    "domain":  { "label": "Domain",           "state": "stated", "value": "ignopad.fun", "source": "client statement", "checked": "2026-10-12" },
+    "market":  { "label": "Market source",    "state": "stated", "url": "https://api.dexscreener.com/token-boosts/top/v1", "pairs": "https://api.dexscreener.com/tokens/v1/solana/{addresses}", "source": "client statement", "checked": "2026-10-12" }
+  }
+}
